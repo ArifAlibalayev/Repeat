@@ -2,8 +2,12 @@ import React from "react";
 import "./index.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import useScrollPositon from "../../Hooks/UseScrollPosition";
 
 function WhatWeOffer() {
+  const [scroll] = useScrollPositon(250);
+
+  console.log(scroll);
   return (
     <section id="WhatWeOffer">
       <div className="outOfContainer">
@@ -22,20 +26,22 @@ function WhatWeOffer() {
       </div>
       <div className="WWOContainer">
         <div className="WWOimgBox">
-          <img
+          <img className={scroll ? "translateDefault" : "translate150"}
             src="https://preview.colorlib.com/theme/repeat/images/about_1.jpg.webp"
             alt=""
           />
         </div>
         <div className="WWOcontentBox">
+          <div className="WWOcontentWrap">
           <h2>Graphic Design</h2>
-          <Splide
+          <Splide 
             options={{
               rewind: true,
+              autoplay:true,
               width: "100%",
               gap: "1rem",
-              pagination: "true",
-              
+              pagination: true,
+              arrows: false,
             }}
           >
             <SplideSlide>
@@ -65,6 +71,7 @@ function WhatWeOffer() {
               </p>
             </SplideSlide>
           </Splide>
+          </div>
         </div>
       </div>
     </section>

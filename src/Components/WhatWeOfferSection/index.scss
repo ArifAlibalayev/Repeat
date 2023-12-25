@@ -32,8 +32,10 @@
     overflow: hidden;
 
     .WWOimgBox{
+      overflow: hidden;
         width: 50%;
         img{
+          transition: .2s linear;
             min-height: 400px;
 
         }
@@ -45,10 +47,25 @@ z-index: 4;
     width: 50%;
     min-height: 360px;
     z-index: 5;
-    h2{
-      color: #fff;
-      margin: 20px 0;
+    .WWOcontentWrap{
+      height: 80%;
+      h2{
+        color: #fff;
+        margin: 20px 0;
+      }
+      p{
+        color: rgba(255, 255, 255, 0.5);
+        padding: 80px 50px;
+      }
     }
+    
     }
   }
+}
+
+.translate150{
+  transform: translateX(150%);
+}
+.translateDefault{
+  transform: translateX(0%);
 }

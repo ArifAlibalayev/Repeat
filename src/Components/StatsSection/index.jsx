@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.scss'
 import CountUp from 'react-countup';
+import useScrollPositon from '../../Hooks/UseScrollPosition';
 
 
 function StatsSection() {
@@ -11,6 +12,8 @@ function StatsSection() {
         <div className="countUpBox">
         <i class="fa-regular fa-handshake"></i>
         <CountUp start={1}
+                enableScrollSpy={true}
+
   end={230}
   duration={2}
   separator=" "
@@ -18,9 +21,11 @@ function StatsSection() {
   />
   <p>Projects</p>
         </div>
-        <div className="countUpBox">
+        <div className="countUpBox" style={{marginTop:"70px"}}>
         <i class="fa-solid fa-arrow-pointer"></i>
-        <CountUp start={1}
+        <CountUp 
+        enableScrollSpy={true}
+        start={1}
   end={350}
   duration={2}
   separator=" "
@@ -31,6 +36,7 @@ function StatsSection() {
         <div className="countUpBox">
         <i class="fa-regular fa-thumbs-up"></i>
         <CountUp start={1}
+                enableScrollSpy={true}
   end={8}
   duration={2}
   separator=" "
@@ -38,9 +44,10 @@ function StatsSection() {
   />
   <p>Leadership</p>
         </div>
-        <div className="countUpBox">
+        <div className="countUpBox" style={{marginTop:"70px"}}>
         <i class="fa-solid fa-computer-mouse"></i>
         <CountUp start={1}
+                enableScrollSpy={true}
   end={15}
   duration={2}
   separator=" "
