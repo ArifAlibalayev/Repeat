@@ -1,0 +1,39 @@
+#Hero{
+    background-image: url('https://preview.colorlib.com/theme/repeat/images/hero_1.jpg.webp');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 75vh;
+    .typeHero{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 45vh;
+    width: 40%;
+    margin: auto;
+    gap: 15px;
+
+        p{
+            width: 90%;
+            font-stretch: narrower;
+            text-align: center;
+            font-weight: 300;
+    font-size: 12px;        }
+    }
+    .heroBtn{
+        margin-top: 20px;
+        
+        
+        button{
+            border: none;
+        outline: none;
+        border-radius: 30px;
+        width: 150px;
+        height: 45px;
+        background-color: #ff8e71;
+            color: white;
+        }
+        
+    }
+}

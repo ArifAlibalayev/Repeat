@@ -1,0 +1,30 @@
+#StatsSection{
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    h2{
+        color: #003a70;
+        font-size: 32px;
+    }
+    .countUpContainer{
+     display: flex;
+     justify-content: space-between;
+     margin: 50px 0;
+    .countUpBox{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 250px;
+        height: 300px;
+        i{
+            font-size: 60px;
+            color: #ff8e71;
+        }
+        p{
+            font-size: 14px;
+            color: #888888;
+        }
+    }
+    }
+}
+

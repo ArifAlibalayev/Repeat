@@ -1,0 +1,77 @@
+#AboutUsSection{
+    background-image: url('https://preview.colorlib.com/theme/repeat/images/hero_1.jpg.webp');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 75vh;
+    position: relative;
+    .containerAboutUs{
+        z-index: 3;
+    position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        min-height: 75vh;
+    }
+    .aboutUsOverlay{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 75vh;
+        background-color: rgba(0, 58, 112, 0.9);
+    }
+}
+
+.aboutUsWrapper{
+    // position: absolute;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .titleAboutUs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p{
+            color:#ff8e71
+        }
+        h2{
+            color: white;
+            font-size: 32px;
+        }
+        .aboutUsImgBox{
+            // width:50%;
+            transform: translateY(5%);
+            margin-top: 40px;
+            img{
+               height: 450px;
+            }
+        }
+    }
+    .contentAboutUs{
+        width: 30%;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.5) !important;
+        display: flex;
+        justify-content: start;
+        gap: 15px;
+        flex-direction: column;
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        .orangeLine{
+            bottom: 0;
+            position: absolute;
+            width: 3px;
+            min-height: 35vh;
+            background-color: #ff8e71;
+            transform: translateY(22%);
+
+        }
+    }
+}
+

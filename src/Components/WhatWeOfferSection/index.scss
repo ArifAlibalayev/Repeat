@@ -1,0 +1,54 @@
+#WhatWeOffer {
+  max-width: 75%;
+  min-height: 60vh;
+  margin: 250px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .outOfContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    .rightBox {
+      width: 40%;
+    }
+  }
+  .titleWhatWeOffer {
+    h2{
+        font-weight: 700;
+    color: #003a70;
+    font-size: 32px;
+    }
+    p{
+        color: #888888;
+    }
+    line-height: 40px;
+  }
+  .WWOContainer{
+    display: flex;
+    align-items: stretch !important; 
+    // gap: 1px;
+    overflow: hidden;
+
+    .WWOimgBox{
+        width: 50%;
+        img{
+            min-height: 400px;
+
+        }
+z-index: 4;
+    }
+    .WWOcontentBox{
+        background: rgba(0, 58, 112, 0.9);
+    padding: 50px 100px;
+    width: 50%;
+    min-height: 360px;
+    z-index: 5;
+    h2{
+      color: #fff;
+      margin: 20px 0;
+    }
+    }
+  }
+}

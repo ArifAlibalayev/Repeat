@@ -1,0 +1,45 @@
+#header {
+  position: fixed;
+  top: 2%;
+  left: 0;
+  width: 100%;
+
+  nav {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      h3 {
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+    .navBtns {
+      ul {
+        display: flex;
+        gap: 30px;
+        li{
+            font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.nlActive {
+  color: orangered;
+}
+
+.nlPending {
+  color: black;
+}
+
+.nlActiveLogo {
+  color: #003a70;
+}
+
+.nlPendingLogo {
+  color: #003a70;
+}
